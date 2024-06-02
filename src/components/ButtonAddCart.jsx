@@ -9,7 +9,7 @@ import React, { useState } from 'react';
 import useSound from 'use-sound';
 
 const ButtonAddCart = ({ onOptionSelect }) => {
-    const url_send = 'https://kiwi-vision-lb-api-538995587.us-east-1.elb.amazonaws.com/predict'
+    const url_send = 'http://kiwi-vision-lb-api-538995587.us-east-1.elb.amazonaws.com/predict'
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
     const [isLoading, setLoading] = useState(true);
